@@ -1,7 +1,18 @@
-<ul>
-  <li *ngFor="let d of view;let i=index" [attr.data.index]="i">
-  {{d}}
-  {{i}}
-  <input type="button" value="remove" (click)="onRemoveDone(i)">
-</li>
-</ul>
+<div class="card">
+    <h4 class="card-header"style="color:black">My Done List </h4>
+    <div class="card-body">
+     
+      <ul>
+        <li class="card" *ngFor="let d of view;let i=index" [attr.data.index]="i">
+          <div class="row card-body">
+              {{i+1}}
+              {{d}}
+            
+              
+              <input  class="btn" style="background-color:rgb(150, 96, 201);color: white;margin-left: 2rem;font-weight: bold" type="button" value="remove" (click)="onRemoveDone(i)">
+          </div>
+       
+      </li>
+      </ul>
+    </div>
+  </div>

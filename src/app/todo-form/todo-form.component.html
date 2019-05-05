@@ -1,7 +1,12 @@
-<p>
-</p>
+
 <form [formGroup]="todoForm"(ngSubmit)="onSubmit()">
-  <input type="text" formControlName="todo">
+  <div class="card">
+    <div class="card-body">
+  <input type="text" class="form-control"formControlName="todo">
   <br>
-  <input type="submit" name="submit">
+  <div class=row>
+  <input class="mx-auto" style="width:200px;margin-left:290px;font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;font-weight: bold;color: azure;background-color: rgb(150, 96, 201)"  type="submit" name="submit" value="+ New task" class="btn btn-light">
+</div>
+</div>
+</div>
 </form>
